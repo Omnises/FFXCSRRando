@@ -281,7 +281,7 @@ static class Transitions
             new Transition { RoomNumber = 103, Storyline = 164, Description = "Wakka catches up with Tidus in trials"} },
         {
             () => { return MemoryWatchers.RoomNumber.Current == 103 && MemoryWatchers.Storyline.Current == 164; },
-            new Transition { RoomNumber = 42, Storyline = 170, EnableValefor = 17, Description = "Tidus meets Lulu and Kimahri + FMV "} },
+            new Transition { RoomNumber = 42, Storyline = 170, /*EnableValefor = 17, */Description = "Tidus meets Lulu and Kimahri + FMV "} },
         {
             () => { return MemoryWatchers.RoomNumber.Current == 42 && MemoryWatchers.Storyline.Current == 170; },
             new Transition { RoomNumber = 42, Storyline = 172, SpawnPoint = 0, PositionTidusAfterLoad = true, Target_x = -0.000f, Target_y = 0.0f, Target_z = 57.367f, Target_rot = -1.570f, Target_var1 = 170, Description = "The gang leave the cloister of trials"} },
@@ -300,7 +300,7 @@ static class Transitions
                                         // Tidus wakes up again (Party healed at this point)
         {
             () => { return MemoryWatchers.RoomNumber.Current == 17 && MemoryWatchers.Storyline.Current == 200; },
-            new BrotherhoodTransition { RoomNumber = 69, Storyline = 210, SpawnPoint = 3, EnableYuna = 17, EnableLulu = 17, TidusWeaponDamageBoost = 5, Description = "Yuna says goodbye to Besaid" } },
+            new BrotherhoodTransition { RoomNumber = 69, Storyline = 210, SpawnPoint = 3, /*EnableYuna = 17, EnableLulu = 17, */TidusWeaponDamageBoost = 5, Description = "Yuna says goodbye to Besaid" } },
         {
             () => { return MemoryWatchers.RoomNumber.Current == 67 && MemoryWatchers.Storyline.Current == 210; },
             new Transition { RoomNumber = 67, Storyline = 214, SpawnPoint = 3, Description = "Yuna says goodbye to Besaid again"} },
@@ -402,7 +402,7 @@ static class Transitions
             new Transition { Storyline = 346, SpawnPoint = 1, PositionTidusAfterLoad = true, Target_x = -12.839f, Target_y = 0.0f, Target_z = -5.327f, Target_var1 = 31, Description = "Fayth explanation"} },
         {
             () => { return MemoryWatchers.RoomNumber.Current == 45 && MemoryWatchers.Storyline.Current == 346 && MemoryWatchers.State.Current == 1; },
-            new Transition { MenuTriggerValue = 0x40080009, EnableIfrit = 0x11, ForceLoad = false, Description = "Naming Ifrit"} },
+            new Transition { MenuTriggerValue = 0x40080009, /*EnableIfrit = 0x11, */ForceLoad = false, Description = "Naming Ifrit"} },
         {
             () => { return MemoryWatchers.RoomNumber.Current == 45 && MemoryWatchers.Storyline.Current == 346 && MemoryWatchers.Menu.Current == 1 && MemoryWatchers.MenuValue1.Current == 0x4000; },
             new Transition { RoomNumber = 78, Storyline = 348, Description = "Exit Temple"} },
@@ -667,7 +667,7 @@ static class Transitions
             new Transition { RoomNumber = 214, Storyline = 995, SpawnPoint = 0, Description = "Entering the Djose trials"} },
         {
             () => { return MemoryWatchers.RoomNumber.Current == 90 && MemoryWatchers.Storyline.Current == 998; },
-            new Transition { MenuTriggerValue = 0x4008000A, EnableIxion = 0x11, ForceLoad = false, Description = "Naming Ixion"} },
+            new Transition { MenuTriggerValue = 0x4008000A, /*EnableIxion = 0x11, */ForceLoad = false, Description = "Naming Ixion"} },
         {
             () => { return MemoryWatchers.RoomNumber.Current == 90 && MemoryWatchers.Storyline.Current == 998 && MemoryWatchers.Menu.Current == 1 && MemoryWatchers.MenuValue1.Current == 0x4000; },
             new Transition { RoomNumber = 82, Storyline = 1010, SpawnPoint = 4, FullHeal = true, Description = "Tidus wakes up"} },
@@ -872,7 +872,7 @@ static class Transitions
             () => { return MemoryWatchers.RoomNumber.Current == 136 && MemoryWatchers.Storyline.Current == 1715; },
             BikanelTransition },
         { 
-            () => { return MemoryWatchers.RoomNumber.Current == 136 && MemoryWatchers.Storyline.Current == 1718 && MemoryWatchers.EnableRikku.Current == 0 && MemoryWatchers.State.Current == 1; },
+            () => { return MemoryWatchers.RoomNumber.Current == 136 && MemoryWatchers.Storyline.Current == 1718 /*&& MemoryWatchers.EnableRikku.Current == 0*/ && MemoryWatchers.State.Current == 1; },
             new Transition { Storyline = 1720, SpawnPoint = 3, /*FormationSwitch = Transition.formations.BikanelRikku, */BikanelFlag = 32, Description = "Wakka Glare" } },
         { 
             () => { return MemoryWatchers.RoomNumber.Current == 138 && MemoryWatchers.Storyline.Current == 1720 && MemoryWatchers.State.Current == 1 && MemoryWatchers.MovementLock.Current == 0x30; }, 
@@ -927,7 +927,7 @@ static class Transitions
             new Transition { RoomNumber = 180, Storyline = 2135, Description = "Bevelle Guards to Trials"} },
         { 
             () => { return MemoryWatchers.RoomNumber.Current == 226 && MemoryWatchers.Storyline.Current == 2135; }, 
-            new Transition { MenuTriggerValue = 0x4008000C, EnableBahamut = 0x11, ForceLoad = false, Description = "Trials to Bahamut naming"} },
+            new Transition { MenuTriggerValue = 0x4008000C, /*EnableBahamut = 0x11, */ForceLoad = false, Description = "Trials to Bahamut naming"} },
         { 
             () => { return MemoryWatchers.RoomNumber.Current == 226 && MemoryWatchers.Storyline.Current == 2135 && MemoryWatchers.Menu.Current == 1 && MemoryWatchers.MenuValue1.Current == 0x4000; }, 
             new Transition { RoomNumber = 198, Storyline = 2220, SpawnPoint = 0, /*FormationSwitch = Transition.formations.ViaPurificoStart, */Description = "Bahamut to Via Purifico", ViaPurificoPlatform = 1 } },
@@ -938,7 +938,7 @@ static class Transitions
         //{ () => { return MemoryWatchers.RoomNumber.Current == 226 && MemoryWatchers.Storyline.Current == 2155 && MemoryWatchers.Menu.Current == 0},
         //  new Transition { RoomNumber = 198, Storyline = 2220, SpawnPoint = 0, FormationSwitch = Transition.formations.ViaPurificoStart, Description = "Bahamut to Via Purifico", ViaPurificoPlatform = 1 } },
         { 
-            () => { return MemoryWatchers.RoomNumber.Current == 198 && MemoryWatchers.Storyline.Current == 2220 && MemoryWatchers.EnableAuron.Current == 17; }, 
+            () => { return MemoryWatchers.RoomNumber.Current == 198 && MemoryWatchers.Storyline.Current == 2220 /*&& MemoryWatchers.EnableAuron.Current == 17*/; }, 
             new IsaaruTransition {ForceLoad = false, Description = "Isaaru", Suspendable = false, Repeatable = true} },
         { 
             () => { return MemoryWatchers.RoomNumber.Current == 209 && MemoryWatchers.Storyline.Current == 2220; }, 
@@ -1094,7 +1094,7 @@ static class Transitions
             new Transition { SpawnPoint = 1, Storyline = 326, PositionTidusAfterLoad = true, Target_x = -11.760f, Target_y = -159.978f, Target_z = 541.001f, Target_rot = 1.698f, Target_var1 = 88, MoveFrame = 5, Description = "Geneaux"} },
         { 
             () => { return MemoryWatchers.RoomNumber.Current == 45 && MemoryWatchers.Storyline.Current == 346 && MemoryWatchers.State.Current == 1; }, 
-            new Transition { RoomNumber = 78, Storyline = 348, SpawnPoint = 0, EnableIfrit = 17, Description = "Ifrit"} },
+            new Transition { RoomNumber = 78, Storyline = 348, SpawnPoint = 0, /*EnableIfrit = 17, */Description = "Ifrit"} },
         { 
             () => { return MemoryWatchers.EncounterMapID.Current == 14 && MemoryWatchers.EncounterFormationID2.Current == 0 && MemoryWatchers.Storyline.Current == 492; }, 
             new Transition { RoomNumber = 121, EncounterMapID = 0, EncounterFormationID2 = 0, Description = "Machina"} },

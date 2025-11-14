@@ -428,7 +428,7 @@ public class Transition
         WriteValue(MemoryWatchers.AeonTransition, AeonTransition);
         WriteValue(MemoryWatchers.YuYevonTransition, YuYevonTransition);
         WriteValue(MemoryWatchers.YojimboFaythTransition, YojimboFaythTransition);
-        WriteValue(MemoryWatchers.EnableTidus, EnableTidus);
+        /*WriteValue(MemoryWatchers.EnableTidus, EnableTidus);
         WriteValue(MemoryWatchers.EnableYuna, EnableYuna);
         WriteValue(MemoryWatchers.EnableAuron, EnableAuron);
         WriteValue(MemoryWatchers.EnableKimahri, EnableKimahri);
@@ -443,7 +443,7 @@ public class Transition
         WriteValue(MemoryWatchers.EnableBahamut, EnableBahamut);
         WriteValue(MemoryWatchers.EnableAnima, EnableAnima);
         WriteValue(MemoryWatchers.EnableYojimbo, EnableYojimbo);
-        WriteValue(MemoryWatchers.EnableMagus, EnableMagus);
+        WriteValue(MemoryWatchers.EnableMagus, EnableMagus);*/
 
         WriteValue(MemoryWatchers.BaajFlag1, BaajFlag1);
         WriteValue(MemoryWatchers.SSWinnoFlag1, SSWinnoFlag1);
