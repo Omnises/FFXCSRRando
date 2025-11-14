@@ -57,9 +57,9 @@ internal sealed class CsrConfigBinder : BinderBase<CsrConfig>
 internal sealed record CsrConfig
 {
     public bool CsrOn { get; set; }
-    public bool CsrBreakOn { get; set; }
-    public bool TrueRngOn { get; set; }
-    public bool SetSeedOn { get; set; }
+    //public bool CsrBreakOn { get; set; }
+    //public bool TrueRngOn { get; set; }
+    //public bool SetSeedOn { get; set; }
     public int  MtSleepInterval { get; set; }
 };
 
