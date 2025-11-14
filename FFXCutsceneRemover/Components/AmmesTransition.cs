@@ -30,7 +30,7 @@ class AmmesTransition : Transition
         }
         else if (MemoryWatchers.AmmesTransition.Current == (BaseCutsceneValue + 0x9A2C) && Stage == 2)
         {
-            process.Suspend();
+            //process.Suspend();
 
             new Transition{ Storyline = 16, SpawnPoint = 1, Description = "Sinscales to Ammes"}.Execute();
 

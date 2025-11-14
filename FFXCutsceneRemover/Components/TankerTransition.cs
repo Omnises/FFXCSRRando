@@ -14,7 +14,7 @@ class TankerTransition : Transition
 
         if (MemoryWatchers.FrameCounterFromLoad.Current > 10 && Stage == 0)
         {
-            process.Suspend();
+            //process.Suspend();
 
             new Transition
             {
@@ -51,7 +51,7 @@ class TankerTransition : Transition
         }
         else if (MemoryWatchers.BattleState2.Current == 0 && Stage == 3)
         {
-            process.Suspend();
+            //process.Suspend();
 
             new Transition { RoomNumber = 367, Storyline = 19, Description = "Post Tanker"}.Execute();
 

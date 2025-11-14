@@ -14,7 +14,7 @@ class FinLeftTransition : Transition
         {
             if (Stage == 0)
             {
-                process.Suspend();
+                //process.Suspend();
 
                 new Transition { EncounterMapID = 73, EncounterFormationID2 = 0, ScriptedBattleFlag1 = 0, ScriptedBattleFlag2 = 1, ScriptedBattleVar1 = 0x00010501, EncounterTrigger = 2, Description = "Left Fin", ForceLoad = false }.Execute();
 

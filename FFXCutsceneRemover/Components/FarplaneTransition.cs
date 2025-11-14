@@ -33,7 +33,7 @@ class FarplaneTransition : Transition
         {
             WriteValue<int>(MemoryWatchers.FarplaneTransition2, BaseCutsceneValue + 0xB86C);
 
-            /*process.Suspend();
+            /*//process.Suspend();
             IntPtr EquipMenu = new IntPtr(baseAddress + 0xD30F2C); // Address of beginning of Equipment menu
             bool foundBrotherhood = false;
             var brotherhood = new byte[2] { 0x1, 0x50 }; // Brotherhood name identifier in hex

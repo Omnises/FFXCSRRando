@@ -13,7 +13,7 @@ class SeymourTransition : Transition
 
         if (MemoryWatchers.MovementLock.Current == 0 && Stage == 0)
         {
-            process.Suspend();
+            //process.Suspend();
 
             base.Execute();
 
@@ -25,7 +25,7 @@ class SeymourTransition : Transition
         }
         else if (MemoryWatchers.MovementLock.Current == 0x10 && Stage == 1)
         {
-            process.Suspend();
+            //process.Suspend();
 
             WriteValue<byte>(MemoryWatchers.CutsceneTiming, 0);
 

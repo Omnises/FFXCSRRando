@@ -13,7 +13,7 @@ class EvraeTransition : Transition
 
         if (MemoryWatchers.FrameCounterFromLoad.Current < 5 && MemoryWatchers.State.Current == 0 && Stage == 0)
         {
-            process.Suspend();
+            //process.Suspend();
 
             new Transition
             {

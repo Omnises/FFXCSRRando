@@ -563,7 +563,7 @@ public class Transition
             {
                 MemoryWatchers.FrameCounterFromLoad.Update(process);
             }
-            process.Suspend();
+            //process.Suspend();
             byte originalEncountersActiveFlag = MemoryWatchers.EncountersActiveFlag.Current;
             WriteValue<byte>(MemoryWatchers.EncountersActiveFlag, 0);
             SetActorPosition(1, Target_x, Target_y, Target_z, Target_rot, Target_var1);
@@ -573,7 +573,7 @@ public class Transition
             {
                 MemoryWatchers.FrameCounterFromLoad.Update(process);
             }
-            process.Suspend();
+            //process.Suspend();
             if (KeepEncounterThreatAfterLoad)
             {
                 WriteValue<float>(MemoryWatchers.TotalDistance, TotalDistanceBeforeLoad);

@@ -76,7 +76,7 @@ class CrawlerTransition : Transition
         }
         else if (MemoryWatchers.GilRewardCounter.Current == 0 && Stage == 8)
         {
-            process.Suspend();
+            //process.Suspend();
 
             new Transition { MenuCleanup = true, /*AddRewardItems = true, */Description = "Exit Menu", ForceLoad = false }.Execute();
 

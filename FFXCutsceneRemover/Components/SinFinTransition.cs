@@ -41,7 +41,7 @@ class SinFinTransition : Transition
             }
             else if (MemoryWatchers.SinFinTransition.Current == (BaseCutsceneValue + 0xCFD) && MemoryWatchers.BattleState2.Current == 1 && Stage == 2) //200 = Sinscale HP
             {
-                process.Suspend();
+                //process.Suspend();
 
                 new Transition { ForceLoad = false, Storyline = 272, Description = "Post Sin Fin" }.Execute();
 

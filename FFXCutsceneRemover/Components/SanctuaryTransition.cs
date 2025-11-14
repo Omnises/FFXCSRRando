@@ -18,7 +18,7 @@ class SanctuaryTransition : Transition
 
             if (Stage == 0)
             {
-                process.Suspend();
+                //process.Suspend();
 
                 new Transition
                 {

@@ -25,7 +25,7 @@ class GuiTransition : Transition
         
         if (MemoryWatchers.Dialogue1.Current == 95 && dialogBoxStatus == 0x02 && dialogBoxSelection == 0x01 && Stage == 0)
         {
-            process.Suspend();
+            //process.Suspend();
             
             new Transition
             {
@@ -55,7 +55,7 @@ class GuiTransition : Transition
         }
         else if (MemoryWatchers.BattleState2.Current == 0 && Stage == 2)
         {
-            process.Suspend();
+            //process.Suspend();
 
             //GuiFormation = process.ReadBytes(MemoryWatchers.Formation.Address, 10);
 
@@ -82,7 +82,7 @@ class GuiTransition : Transition
         }
         else if (MemoryWatchers.Menu.Current == 1 && Stage == 3)
         {
-            process.Suspend();
+            //process.Suspend();
 
             //new Transition { Formation = GuiFormation, FormationSwitch = formations.PostGui, Description = "Fix Party", ForceLoad = false }.Execute();
 
